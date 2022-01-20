@@ -1,23 +1,11 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { NgbDatepickerI18n, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+import { MONTHS, WEEK_DAYS, WEEK_LABEL } from '../@constants/datepicker';
 const I18N_VALUES = {
   fr: {
-    weekdays: ['Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa', 'Di'],
-    months: [
-      'Jan',
-      'Fév',
-      'Mar',
-      'Avr',
-      'Mai',
-      'Juin',
-      'Juil',
-      'Aou',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Déc',
-    ],
-    weekLabel: 'sem',
+    weekdays: WEEK_DAYS,
+    months: MONTHS,
+    weekLabel: WEEK_LABEL,
   },
   // other languages you would support
 };
